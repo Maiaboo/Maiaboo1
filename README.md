@@ -2,9 +2,24 @@
 
 <h2>👨‍💻 Cybersecurity Projects</h2>
   
--[Active Directory Home Lab]: (https://github.com/maiaboo1/laburl)
--[Port Scanner]: (URL)
--
+- Active Directory Home Lab: (https://github.com/maiaboo1/laburl)
+
+- [Port Scanner: (URL)]
+
+<h2> Basic HTML Projects </h2>
+
+- Laser Eyes Robot (https://github.com/Maiaboo/-builds/blob/main/laser-eyes-robot)
+
+- Tip Calculator (https://github.com/Maiaboo/-builds/blob/main/day_2_final_project_tip_calc)
+
+- Order Pizza App (https://github.com/Maiaboo/-builds/blob/main/pizza)
+
+- Restaurant Menu Page (https://github.com/Maiaboo/-builds)
+
+- Web-Page (https://github.com/Maiaboo/-builds/blob/main/site-code)
+
+- Treasure Island (https://github.com/Maiaboo/-builds/blob/main/treasure_island)
+
 <h2>📺 Popular YouTube Videos</h2>
 
 - [Active Directory Home Lab](url)
