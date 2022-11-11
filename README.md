@@ -30,22 +30,21 @@
 [<img align="left" alt="JoshMadakor | Twitter" width="22px" src="https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/twitter.svg" />][twitter]
 [<img align="left" alt="JoshMadakor | LinkedIn" width="22px" src="https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/linkedin.svg" />][linkedin]
 
-[twitter]: https://twitter.com/joshmadakor
-[youtube]: https://www.youtube.com/c/joshmadakor
-[instagram]: https://www.instagram.com/joshmadakor/
-[linkedin]: https://linkedin.com/in/joshmadakor
+[twitter]: https://twitter.com/maia_boo
+[instagram]: https://www.instagram.com/goodness.maia/
+[linkedin]: https://www.linkedin.com/in/maia-y/
 
 <!--
 **joshmadakor1/joshmadakor1** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 
 Here are some ideas to get you started:
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
+- 🔭 I’m currently working on a Port scanner Project
+- 🌱 I’m currently learning Python
+- 👯 I’m looking to collaborate on Cool Innovative Pojects
+- 🤔 I’m looking for help with Career Path
+- 💬 Ask me about My Eyepatch
+- 📫 How to reach me: Best via Linkedin
+- 😄 Pronouns: She/Her
+- ⚡ Fun fact: I lost my eye in a fight with a group of Ninjas when i used to live in Tokyo
 -->
