@@ -32,6 +32,7 @@
 
 <h2> Certifications</h2>
 - ITIL V4
+
 - ISC2 Certified In CyberSecurity CC
 
 <h2> 🤳 Connect with me:</h2>
