@@ -1,4 +1,12 @@
 <h1>Hi, I'm Maia! </h1>
+I’m currently working on a Port scanner Project
+- 🌱 I’m currently learning Python
+- 👯 I’m looking to collaborate on Cool Innovative Pojects
+- 🤔 I’m looking for help with Career Path
+- 💬 Ask me about My Eyepatch
+- 📫 How to reach me: Best via Linkedin
+- 😄 Pronouns: She/Her
+- ⚡ Fun fact: I lost my eye in a fight with a group of Ninjas when i used to live in Tokyo
 
 <h2>👨‍💻 Cybersecurity Projects</h2>
   
@@ -28,7 +36,6 @@
 
 <h2> 🤳 Connect with me:</h2>
 
-[<img align="left" alt="Maiaboo | YouTube" width="22px" src="https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/youtube.svg" />][youtube]
 [<img align="left" alt="Maia_boo | Twitter" width="22px" src="https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/twitter.svg" />][twitter]
 [<img align="left" alt="Maia Melissa Young | LinkedIn" width="22px" src="https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/linkedin.svg" />][linkedin]
 
