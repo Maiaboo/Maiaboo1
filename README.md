@@ -1,5 +1,5 @@
 <h1>Hi, I'm Maia! </h1>
-I’m currently working on a Port scanner Project
+- 🔭 I’m currently working on a Port scanner Project
 - 🌱 I’m currently learning Python
 - 👯 I’m looking to collaborate on Cool Innovative Pojects
 - 🤔 I’m looking for help with Career Path
