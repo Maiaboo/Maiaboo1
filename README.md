@@ -10,9 +10,9 @@
 
 <h2>👨‍💻 Cybersecurity Projects</h2>
   
-- Active Directory Home Lab: (https://github.com/maiaboo1/laburl)
+- Active Directory Home Lab: (URL)
 
-- [Port Scanner: (URL)]
+- Port Scanner: (URL)
 
 <h2> Basic HTML Projects </h2>
 
