@@ -28,9 +28,7 @@
 
 - Treasure Island (https://github.com/Maiaboo/-builds/blob/main/treasure_island)
 
-<h2>📺 Popular YouTube Videos</h2>
 
-- [Active Directory Home Lab](url)
 
 <h2> Certifications</h2>
 
@@ -45,15 +43,8 @@
 
 <!--
 **maiaboo/maiaboo1** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+<h2>📺 Popular YouTube Videos</h2>
 
-Here are some ideas to get you started:
+- [Active Directory Home Lab](url)
 
-- 🔭 I’m currently working on a Port scanner Project
-- 🌱 I’m currently learning Python
-- 👯 I’m looking to collaborate on Cool Innovative Pojects
-- 🤔 I’m looking for help with Career Path
-- 💬 Ask me about My Eyepatch
-- 📫 How to reach me: Best via Linkedin
-- 😄 Pronouns: She/Her
-- ⚡ Fun fact: I lost my eye in a fight with a group of Ninjas when i used to live in Tokyo
 -->
