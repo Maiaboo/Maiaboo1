@@ -14,6 +14,10 @@
 
 - Port Scanner: (URL)
 
+<h2> Power BI Projects </h2>
+
+- Data Science Pro Survey data Download (
+
 <h2> Basic HTML Projects </h2>
 
 - Laser Eyes Robot (https://github.com/Maiaboo/-builds/blob/main/laser-eyes-robot)
