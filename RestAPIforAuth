@@ -1,0 +1,137 @@
+from flask import Flask, jsonify, request, make_response
+import jwt
+import datetime
+from functools import wraps
+
+app = Flask(__name__)
+app.config['SECRET_KEY'] = 'your-secret-key'
+
+# Create a simple user database
+users = {
+    'john': 'password1',
+    'susan': 'password2'
+}
+
+# Define a function to generate a JWT token
+def generate_token(username):
+    payload = {
+        'exp': datetime.datetime.utcnow() + datetime.timedelta(minutes=30),
+        'iat': datetime.datetime.utcnow(),
+        'sub': username
+    }
+    return jwt.encode(payload, app.config['SECRET_KEY'], algorithm='HS256')
+
+# Define a decorator to require authentication for certain routes
+def login_required(f):
+    @wraps(f)
+    def decorated_function(*args, **kwargs):
+        token = request.headers.get('Authorization')
+        if not token:
+            return jsonify({'message': 'Authentication required!'}), 401
+
+        try:
+            data = jwt.decode(token, app.config['SECRET_KEY'], algorithms=['HS256'])
+        except:
+            return jsonify({'message': 'Invalid token!'}), 401
+
+        return f(*args, **kwargs)
+
+    return decorated_function
+
+# Define a route to handle user login and token generation
+@app.route('/login', methods=['POST'])
+def login():
+    auth = request.authorization
+    if not auth or not auth.username or not auth.password:
+        return make_response('Could not verify', 401, {'WWW-Authenticate': 'Basic realm="Login Required!"'})
+
+    if auth.username not in users or users[auth.username] != auth.password:
+        return make_response('Could not verify', 401, {'WWW-Authenticate': 'Basic realm="Login Required!"'})
+
+    token = generate_token(auth.username)
+    return jsonify({'token': token.decode('utf-8')})
+
+# Define a route that requires authentication
+@app.route('/protected', methods=['GET'])
+@login_required
+def protected():
+    return jsonify({'message': 'This is a protected route!'})
+
+if __name__ == '__main__':
+    app.run(debug=True)
+
+# Sure! Here's an example of how to build a REST API for authentication using Python and Flask:
+
+python
+Copy code
+from flask import Flask, jsonify, request, make_response
+import jwt
+import datetime
+from functools import wraps
+
+app = Flask(__name__)
+app.config['SECRET_KEY'] = 'your-secret-key'
+
+# Create a simple user database
+users = {
+    'john': 'password1',
+    'susan': 'password2'
+}
+
+# Define a function to generate a JWT token
+def generate_token(username):
+    payload = {
+        'exp': datetime.datetime.utcnow() + datetime.timedelta(minutes=30),
+        'iat': datetime.datetime.utcnow(),
+        'sub': username
+    }
+    return jwt.encode(payload, app.config['SECRET_KEY'], algorithm='HS256')
+
+# Define a decorator to require authentication for certain routes
+def login_required(f):
+    @wraps(f)
+    def decorated_function(*args, **kwargs):
+        token = request.headers.get('Authorization')
+        if not token:
+            return jsonify({'message': 'Authentication required!'}), 401
+
+        try:
+            data = jwt.decode(token, app.config['SECRET_KEY'], algorithms=['HS256'])
+        except:
+            return jsonify({'message': 'Invalid token!'}), 401
+
+        return f(*args, **kwargs)
+
+    return decorated_function
+
+# Define a route to handle user login and token generation
+@app.route('/login', methods=['POST'])
+def login():
+    auth = request.authorization
+    if not auth or not auth.username or not auth.password:
+        return make_response('Could not verify', 401, {'WWW-Authenticate': 'Basic realm="Login Required!"'})
+
+    if auth.username not in users or users[auth.username] != auth.password:
+        return make_response('Could not verify', 401, {'WWW-Authenticate': 'Basic realm="Login Required!"'})
+
+    token = generate_token(auth.username)
+    return jsonify({'token': token.decode('utf-8')})
+
+# Define a route that requires authentication
+@app.route('/protected', methods=['GET'])
+@login_required
+def protected():
+    return jsonify({'message': 'This is a protected route!'})
+
+if __name__ == '__main__':
+    app.run(debug=True)
+In this example, we define a simple user database, a function to generate JWT tokens, and a decorator to 
+require authentication for certain routes. We also define two routes: /login and /protected. 
+The /login route accepts a Basic Authentication header with a username and password, checks if the user is in the database and the 
+password is correct, and generates a JWT token if authentication succeeds. The /protected route requires a 
+valid JWT token to be present in the Authorization header and returns a JSON response with a "message" key.
+To test this example, you can use a tool like curl or Postman. For example, to log in as user "john" with password "password1", 
+send a POST request to http://localhost:5000/login with a Basic Authentication header containing the username and password.
+This should return a JSON response with a "token" key containing the JWT token.
+To access the protected route, send a GET request to http://localhost:5000/protected with an Authorization header containing the JWT token. 
+This should return a JSON response with the "message" key. #
