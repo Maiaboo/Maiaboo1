@@ -14,6 +14,8 @@
 
 - Port Scanner: (https://github.com/Maiaboo/Maiaboo1/commit/aaf8f9b5d769dc7f5ce459c14cc7c4217532b0e6)
 
+- File Integrity Monitor (https://github.com/Maiaboo/Maiaboo1/blob/main/fileintegritymonitorinpython)
+
 <h2> Power BI Projects </h2>
 
 - Data Science Pro Survey data Download ()
