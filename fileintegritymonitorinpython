@@ -1,0 +1,26 @@
+import hashlib
+import time
+
+def monitor_file(filename):
+    # Generate initial hash of file
+    with open(filename, 'rb') as f:
+        hash_value = hashlib.sha256(f.read()).hexdigest()
+
+    while True:
+        time.sleep(1) # Sleep for 1 second before checking again
+
+        # Generate new hash of file
+        with open(filename, 'rb') as f:
+            new_hash_value = hashlib.sha256(f.read()).hexdigest()
+
+        # Compare new hash to original hash
+        if new_hash_value != hash_value:
+            print(f"File {filename} has been modified!")
+            hash_value = new_hash_value  # Update hash value to new value
+
+# To use this function, simply call monitor_file() with the name of the file you want to monitor. For example: 
+monitor_file('example.txt') 
+This function will continuously monitor the file for any modifications and print a message to the console when a modification is detected. 
+Note that this is a very basic example and there are more sophisticated ways to monitor file integrity, 
+such as using digital signatures or cryptographic hashes with a known value. #
+
