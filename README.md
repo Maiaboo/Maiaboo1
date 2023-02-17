@@ -12,11 +12,11 @@
   
 - Active Directory Home Lab: (URL)
 
-- Port Scanner: (URL)
+- Port Scanner: (https://github.com/Maiaboo/Maiaboo1/commit/aaf8f9b5d769dc7f5ce459c14cc7c4217532b0e6)
 
 <h2> Power BI Projects </h2>
 
-- Data Science Pro Survey data Download (
+- Data Science Pro Survey data Download ()
 
 <h2> Basic HTML Projects </h2>
 
