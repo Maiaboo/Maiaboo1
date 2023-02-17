@@ -16,6 +16,10 @@
 
 - File Integrity Monitor (https://github.com/Maiaboo/Maiaboo1/blob/main/fileintegritymonitorinpython)
 
+- Simple Rest API (https://github.com/Maiaboo/Maiaboo1/commit/79ca922dcfb8c46e069e80096dea33f0c28d8c36)
+
+- Rest API for Authentication 
+
 <h2> Power BI Projects </h2>
 
 - Data Science Pro Survey data Download ()
