@@ -1,0 +1,25 @@
+from flask import Flask, jsonify, request
+
+app = Flask(__name__)
+
+# Define a route to handle GET requests
+@app.route('/hello', methods=['GET'])
+def hello():
+    return jsonify({'message': 'Hello, World!'})
+
+# Define a route to handle POST requests
+@app.route('/echo', methods=['POST'])
+def echo():
+    data = request.get_json()  # Get JSON data from request
+    return jsonify(data)
+
+if __name__ == '__main__':
+    app.run(debug=True)
+    
+# We have defined two routes: /hello and /echo. The /hello route returns a JSON response with a "message" key containing the string "Hello, World!". 
+The /echo route accepts JSON data in the body of a POST request and returns the same data in the response.
+To run this, save the code to a file (e.g. api.py) and run it using the command python api.py. 
+This will start a local server at http://localhost:5000/. 
+You can use a tool like curl or Postman to make requests to this server and test the API. 
+For example, you can send a GET request to http://localhost:5000/hello to receive the "Hello, World!" response, or send a POST request to http://localhost:5000/echo with a 
+JSON payload to see the same data echoed back in the response. #
